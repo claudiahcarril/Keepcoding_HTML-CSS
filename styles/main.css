@@ -1,8 +1,47 @@
 :root {
-    --primary-font: ;
+    --primary-color: #fa575a;
+}
+
+
+.navbar {
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    border-bottom: rgb(70, 69, 69) solid 1px;
+
+
+}
+
+.navbar .logo {
+    width: 250px;
+    padding: 5px 0 10px 5px;
+
+    
+}
+
+.navbar .menu {
+    display: none;
 }
 
 
 .header {
-    background-image: url("media/background_portfolio.png");
+    background-image: url("background_portfolio.png");
+}
+
+
+
+
+
+
+
+
+
+
+footer {
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
