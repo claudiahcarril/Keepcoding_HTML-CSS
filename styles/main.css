@@ -62,11 +62,8 @@ main section {
     display: block;
 }
 
-.main-form {
-    display: flex;
-}
 
-.main-form label {
+.form-label {
     font-weight: 600;
 }
 
