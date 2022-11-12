@@ -91,14 +91,14 @@ main section {
 }
 
 @keyframes html {
-    from {
+    0% {
         height: 25px;
         justify-items: center;
         border-radius: 10px;
         background-color: var(--primary-color);
         width: 0%;
     }
-    to {
+    100% {
         background-color: var(--primary-color);
         width: 120%;        
     }
@@ -106,6 +106,9 @@ main section {
 
 #seo {
     animation: seo 10s;  
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+
 }
 
 #html {
@@ -160,13 +163,23 @@ main section {
     flex-wrap: wrap;
 }
 
+#message {
+    width: 100%;
+}
 
+.button-submit {
+    background-color: var(--primary-color);
+    padding: 10px 15px 10px 15px;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
 
 
 footer {
     background-color: var(--primary-color);
-    display: block;
-
+    display: flex;
+    flex-wrap: wrap;
 }
 
 footer h3 {
