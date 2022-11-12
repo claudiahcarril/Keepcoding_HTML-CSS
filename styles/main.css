@@ -6,6 +6,7 @@ body {
     color: black;
     font-size: 1rem;
     text-align: justify;
+    margin: 0 5px 0 0;
 
 
 }
@@ -17,6 +18,7 @@ body {
     align-items: center;
     flex-wrap: wrap;
     border-bottom: rgb(70, 69, 69) solid 1px;
+    
 }
 
 .navbar .logo {
@@ -59,20 +61,60 @@ main section {
 }
 
 .skills {
-    display: block;
-}
-
-
-.form-label {
+    display: flex;
+    flex-wrap: wrap;
     font-weight: 600;
 }
 
+@keyframes seo {
+    0% {background-color: white;}
+    50% {background-color: var(--primary-color);}
+}
+
+.skill-bar {
+    animation: seo;
+    background-color: white;
+    border: black solid 1px;
+    border-radius: 10px;
+    height: 25px;
+    width: 100%;
+    
+
+
+}
+
+
+
+.main-form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form-label {
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-align: left;
+
+}
+
+.form-tag input {
+    display: block;
+    margin: 4px 0 10px 0;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+}
+
+.form-tag .info {
+    display: flexbox;
+}
 
 
 
 footer {
     background-color: var(--primary-color);
     display: block;
+
 }
 
 footer h3 {
