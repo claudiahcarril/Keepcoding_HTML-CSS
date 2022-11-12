@@ -18,6 +18,7 @@ body {
     align-items: center;
     flex-wrap: wrap;
     border-bottom: rgb(70, 69, 69) solid 1px;
+
     
 }
 
@@ -51,7 +52,7 @@ body {
 
 h2 {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-weight: 700;
+    font-weight: 800;
     color: var(--primary-color);
     margin: 20px 0 7px 0;
 }
@@ -66,21 +67,65 @@ main section {
     font-weight: 600;
 }
 
-@keyframes seo {
-    0% {background-color: white;}
-    50% {background-color: var(--primary-color);}
-}
-
 .skill-bar {
-    animation: seo;
-    background-color: white;
-    border: black solid 1px;
+    border: rgba(70, 69, 69, 0.26) solid 1px;
     border-radius: 10px;
+    background-color: aliceblue;
     height: 25px;
     width: 100%;
-    
+    margin: 5px 0 15px 0;
+}
 
+@keyframes seo {
+    from {
+        height: 25px;
+        justify-items: center;
+        border-radius: 10px;
+        background-color: var(--primary-color);
+        width: 0%;
+    }
+    to {
+        background-color: var(--primary-color);
+        width: 180%;        
+    }
+}
 
+@keyframes html {
+    from {
+        height: 25px;
+        justify-items: center;
+        border-radius: 10px;
+        background-color: var(--primary-color);
+        width: 0%;
+    }
+    to {
+        background-color: var(--primary-color);
+        width: 120%;        
+    }
+}
+
+#seo {
+    animation: seo 10s;  
+}
+
+#html {
+    animation: html 10s;  
+}
+
+#css {
+    animation: css 10s;  
+}
+
+#python {
+    animation: python 10s;  
+}
+
+#git {
+    animation: git 10s;  
+}
+
+#js {
+    animation: js 10s;  
 }
 
 
@@ -92,22 +137,29 @@ main section {
 
 .form-label {
     font-weight: 600;
-    margin-bottom: 10px;
     text-align: left;
+}
 
+.form-tag {
+    margin: 4px 0 10px 0;
+    width: 100%;
 }
 
 .form-tag input {
-    display: block;
-    margin: 4px 0 10px 0;
+    display: flex;
     width: 100%;
-    justify-content: center;
-    align-content: center;
+    height: 25px;
+    border: rgba(70, 69, 69, 0.26) solid 1px;
+    background-color: rgba(240, 248, 255, 0.856);
+    margin: 2px 0 5px 0;
 }
 
+
 .form-tag .info {
-    display: flexbox;
+    display: flex;
+    flex-wrap: wrap;
 }
+
 
 
 
