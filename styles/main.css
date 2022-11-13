@@ -19,9 +19,7 @@ body {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    border-bottom: rgb(70, 69, 69) solid 1px;
-
-    
+    border-bottom: rgb(70, 69, 69) solid 1px;   
 }
 
 .navbar .logo {
@@ -34,10 +32,12 @@ body {
 }
 
 
+
+
 .header {
     background-image: url("/media/background_portfolio.png");
     background-size: cover;
-    padding: 50px 50px 50px 50px;
+    padding: 70px 50px 70px 50px;
 }
 
 .h1 {
@@ -62,10 +62,18 @@ main section {
     margin: 0 15px 0 10px;
 }
 
+.skills-div {
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: 600;
+    width: 100%;
+}
+
 .skills {
     display: flex;
     flex-wrap: wrap;
     font-weight: 600;
+    width: 100%;
 }
 
 .skill-bar {
@@ -185,8 +193,6 @@ main section {
     height: 25px;
 }
 
-
-
 .main-form {
     display: flex;
     flex-wrap: wrap;
@@ -232,7 +238,6 @@ main section {
     margin-bottom: 15px;
 }
 
-
 .button {
     display: flex;
     justify-content: flex-end;
@@ -262,3 +267,38 @@ footer {
     margin: 0 8px 0 8px;
 }
 
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    .h1 {
+        text-align: center;
+    }
+
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .navbar .menu a {
+        transition: color 0.3s linear;
+    }
+    .navbar .menu a:hover {
+        color: red;
+    }
+
+    .skills-div {
+        display: flex;
+        width: 50%;
+
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {}
