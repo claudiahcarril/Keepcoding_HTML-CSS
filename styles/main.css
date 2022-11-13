@@ -2,6 +2,10 @@
     --primary-color: #fa575a;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 *, html, body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
@@ -64,7 +68,7 @@ h2 {
     font-weight: 800;
     font-size: 1.2rem;
     color: var(--primary-color);
-    margin: 20px 0 7px 0;
+    margin: 40px 0 7px 0;
 }
 
 main section {
@@ -258,6 +262,7 @@ main section {
 
 footer {
     background-color: var(--primary-color);
+    margin-top: 25px;
 
 }
 
