@@ -15,19 +15,19 @@ section has to have animated progress bars with css animations
 
 ● Contact form with these supplies. They all have to have both the types
 correct as the html validation of each entry.
-    ○ Name - (required)
-    ○ Surname - (required)
-    ○ Phone - (required)
-    ○ Some radio buttons to answer the question "how did you meet me?" -
+    * Name - (required)
+    * Surname - (required)
+    * Phone - (required)
+    * Some radio buttons to answer the question "how did you meet me?" -
     (required)
-        ■ university
-        ■ Keepcoding Released
-        ■ School
-        ■ On Github
-    ○ GitHub tag (Use regexp for validation - @username)
-    ○ description (max 180 characters) - (required)
-    ○ Save button
-    
+        - university
+        - Keepcoding 
+        - High School
+        - On Github
+    * GitHub tag (Use regexp for validation - @username)
+    * description (max 180 characters) - (required)
+    * Save button
+
 ● Footer with links to our social networks. It is important to note that they are links
 to an external resource and we don't want to leave our on those
 websites.
