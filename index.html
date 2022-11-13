@@ -14,22 +14,26 @@
         <img class="hamburguer-menu" src="media/outline_menu_white_24dp.png" alt="hamburguer menu">
         <ul class="menu">
             <li>
-                <a href="#">About me</a>
+                <a class="link" href="#">About me</a>
             </li>
             <li>
-                <a href="#">Skills</a>
+                <a class="link" href="#">Skills</a>
             </li>
             <li>
-                <a href="#">Contact</a>
+                <a class="link" href="#">Contact</a>
             </li>
         </ul>
     </nav>
     <header class="header">
-        <h1 class="h1">Claudia Hernández Portfolio</h1>
+        <div class="h1">
+            <h1>
+                <span>Claudia Hernández Portfolio</span>                
+            </h1>
+        </div>
     </header>
     <main>
         <section>
-        <h2>About me</h2>
+        <h2 class="about-me">About me</h2>
         <p>Hello! I am Claudia Hernandez. I am currently learning to work as a Frontend Developer. This is my portfolio where you can see my skills with different programming languages.</p>
         </section>
         <section>
@@ -76,22 +80,25 @@
         <section>
             <h2>Contact with me</h2>
             <form class="main-form" action="" method="get">
-                <div class="form-tag">
-                    <label for="name" class="form-label">First Name</label>
-                    <input required id="name" name="name" type="text" placeholder="Your name">
+                <div class="inputs-tag">
+                    <div class="form-tag">
+                        <label for="name" class="form-label">First Name</label>
+                        <input required id="name" name="name" type="text" placeholder="Your name">
+                    </div>
+                    <div class="form-tag">
+                        <label for="surname" class="form-label">Last name</label>
+                        <input required id="surname" name="surname" type="text" placeholder="Your last name">
+                    </div>
+                    <div class="form-tag" id="phone">
+                        <label for="phone" class="form-label">Phone</label>
+                        <input required id="phone" name="phone" type="tel" placeholder="Your phone number" pattern="[0-9]+">
+                    </div>
+                    <div class="form-tag" id="github">
+                        <label for="github" class="form-label">GitHub Username</label>
+                        <input requiered id="github" name="github" type="text" placeholder="Using this format (@<username>)" pattern="^@[^\s]+">
+                    </div>
                 </div>
-                <div class="form-tag">
-                    <label for="surname" class="form-label">Last name</label>
-                    <input required id="surname" name="surname" type="text" placeholder="Your last name">
-                </div>
-                <div class="form-tag">
-                    <label for="phone" class="form-label">Phone</label>
-                    <input required id="phone" name="phone" type="tel" placeholder="Your phone number" pattern="[0-9]+">
-                </div>
-                <div class="form-tag">
-                    <label for="github" class="form-label">GitHub Username</label>
-                    <input requiered id="github" name="github" type="text" placeholder="Using this format (@<username>)" pattern="^@[^\s]+">
-                </div>
+
                 <div class="form-tag">
                     <label for="information" class="form-label">How did you knew me?</label>
                         <div class="info">

@@ -28,27 +28,36 @@ body {
 }
 
 .navbar .menu {
-    display: none;
+    display: flex;
 }
 
-
+.navbar .link {
+    color: white;
+    text-decoration: none;
+    display: none;
+    margin-right: 20px;
+}
 
 
 .header {
     background-image: url("/media/background_portfolio.png");
     background-size: cover;
-    padding: 70px 50px 70px 50px;
+    text-align: center;
+    padding: 80px 50px 80px 50px;
 }
 
 .h1 {
+    text-align: center;
+}
+
+h1 {
+    padding: 10px 30px;
+    border-radius: 10px;
     color: white;
     font-size: 1.3rem;
     background-color: #fa575a;
-    padding: 10px;
-    display: flex;
-    border-radius: 10px;
-    align-content: center;
-    text-align: center;
+    margin: auto;
+    max-width: fit-content;
 }
 
 h2 {
@@ -193,19 +202,9 @@ main section {
     height: 25px;
 }
 
-.main-form {
-    display: flex;
-    flex-wrap: wrap;
-}
-
 .form-label {
     font-weight: 600;
     text-align: left;
-}
-
-.form-tag {
-    margin: 4px 0 10px 0;
-    width: 100%;
 }
 
 .form-tag input[type=text], input[type=tel] {
@@ -216,6 +215,19 @@ main section {
     background-color: rgba(240, 248, 255, 0.856);
     margin: 2px 0 5px 0;
 }
+
+.form-tag {
+    padding-top: 15px;
+}
+
+.form-name {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 4px 0 10px 0;
+    width: 100%;
+}
+
+
 
 
 #message {
@@ -240,7 +252,7 @@ main section {
 
 .button {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     width: 100%;
 }
 
@@ -271,31 +283,63 @@ footer {
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
-    .h1 {
-        text-align: center;
+    .header {
+        padding: 100px 50px 100px 50px;
     }
-
-
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-    .navbar .menu a {
+    .navbar .link  {
+        display: flex;
         transition: color 0.3s linear;
     }
-    .navbar .menu a:hover {
-        color: red;
+    .navbar .menu .link:hover {
+        color: black;
+    }
+
+    .hamburguer-menu {
+        display: none;
+    }
+
+    .header {
+        padding: 120px 50px 120px 50px;
     }
 
     .skills-div {
         display: flex;
+        box-sizing: border-box;
         width: 50%;
-
+        padding-right: 15px;
     }
+
+    .inputs-tag {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .inputs-tag > *{
+        box-sizing: border-box;
+        width: 50%;
+    }
+
+    .form-tag {
+        padding-right: 15px;
+    }
+
 }
 
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {}
+@media (min-width: 992px) {
+    .skills-div {
+        width: 33.33%;
+    }
+    .header {
+        padding: 150px 50px 150px 50px;
+    }
+
+}
 
 /* X-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {}
